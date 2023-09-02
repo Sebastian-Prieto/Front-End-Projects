@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./scripts/main.js" defer></script>
+    <title>Pomodoro App</title>
+</head>
+
+<body>
+    <section class="title-section">
+        <h1 class="title-h1" translate="no">
+            Pomodoro App 
+        </h1><span class="emoji">👾</span>
+    </section>
+    <section class="app-section" id="app">
+        <div class="time" id="time">
+            <div class="value" id="value">
+                00:00
+            </div>
+            <div class="taskName" id="taskName"></div>
+        </div>
+
+        <div class="tasks-container">
+            <div class="form">
+                <form action="" id="form">
+                    <input type="text" id="inputTask" oninput="capitalizeFirstLetter()">
+                    <input type="submit" id="addButton" value="Add task!">
+                </form>
+            </div>
+            <div class="tasks">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer-p">
+            Made with 💜 by Sebastián Prieto
+        </p>
+    </footer>
+</body>
+</html>
